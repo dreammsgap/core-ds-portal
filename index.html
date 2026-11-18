@@ -1,0 +1,248 @@
+<p>test</p>
+  <b>x</b><!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Level Design System | Bangkok Bank</title>
+  <meta name="description" content="Tokens, components and templates for every Bangkok Bank web product.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Core Level Design System home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Core Level<br>Design System</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#discover" data-i18n="nav.live">Live Projects</a>
+        <a href="#search" data-i18n="nav.start">Get started</a>
+        <a href="#ai" data-i18n="nav.ai">Empower with AI</a>
+        <a href="#components" data-i18n="nav.ds">Centralize Design System</a>
+        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
+      </nav>
+
+      <div class="header__tools">
+        <a class="icon-btn" href="#search" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="th" aria-pressed="false">TH</button>
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        </div>
+        <a class="btn btn--sm" href="#contact" data-i18n="nav.login">Login</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1 data-i18n="hero.h1">Design once.<br>Use everywhere.</h1>
+          <p data-i18n="hero.p">Tokens, components and templates for every Bangkok Bank web product. No hidden rules.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#search" data-i18n="hero.cta">Get started</a>
+            <a class="link" href="#discover" data-i18n="hero.link">Live Projects &rarr;</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="browser">
+            <div class="browser__bar"><i></i><i></i><i></i><span>core.bangkokbank.com</span></div>
+            <div class="browser__body">
+              <div class="skeleton skeleton--tabs"><b></b><b></b><b></b></div>
+              <div class="skeleton skeleton--bar"></div>
+              <div class="skeleton skeleton--bar skeleton--short"></div>
+              <div class="chips">
+                <span class="chip chip--blue">Button</span><span class="chip chip--blue">Token</span><span class="chip">Pattern</span><span class="chip">Flow</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-card">
+            <small>Component sets</small>
+            <strong>77</strong>
+            <span>&#10003; Synced from Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search + discover -->
+    <section class="section" id="search">
+      <div class="container">
+        <h2 class="center" data-i18n="search.h2">Are you looking for something particular?</h2>
+        <p class="suggest center"><span>We suggest:</span>
+          <button class="chip chip--outline" type="button" data-q="button">Button</button>
+          <button class="chip chip--outline" type="button" data-q="card">Card</button>
+          <button class="chip chip--outline" type="button" data-q="template">Template</button>
+          <button class="chip chip--outline" type="button" data-q="flow">Common Flow</button>
+        </p>
+
+        <form class="search" role="search" id="searchForm">
+          <label class="visually-hidden" for="q">Search components, tokens, patterns</label>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" name="q" type="search" placeholder="Search components, tokens, patterns…" autocomplete="off">
+          <button class="btn" type="submit" data-i18n="search.btn">Search</button>
+        </form>
+        <p class="search__status center" id="searchStatus" role="status" aria-live="polite"></p>
+
+        <div id="discover" class="discover">
+          <h3 class="center">Or discover the system powering every screen</h3>
+          <p class="lead center">Five foundations feed every component, pattern and template on this site — change one token and every screen that uses it updates together.</p>
+
+          <ul class="cards">
+            <li class="card">
+              <span class="card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></span>
+              <h4>Colour</h4>
+              <p>Core, semantic and state colours, mapped for light and dark.</p>
+            </li>
+            <li class="card">
+              <span class="card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5h14M12 5v14M9 19h6"/></svg></span>
+              <h4>Typography</h4>
+              <p>One type scale across Thai and Latin, tuned for every size.</p>
+            </li>
+            <li class="card">
+              <span class="card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><rect x="14" y="14" width="6" height="6" rx="1.5"/></svg></span>
+              <h4>77 components</h4>
+              <p>From inputs to full flows, ready to drop into any screen.</p>
+            </li>
+            <li class="card">
+              <span class="card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16 9.5"/></svg></span>
+              <h4>Accessibility</h4>
+              <p>Contrast, focus states and touch targets checked by default.</p>
+            </li>
+            <li class="card">
+              <span class="card__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 20 7.5v9L12 21l-8-4.5v-9z"/><circle cx="12" cy="12" r="2.4"/></svg></span>
+              <h4>335 tokens</h4>
+              <p>Spacing, radius and motion, shared by Figma and code.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest updated -->
+    <section class="section section--tight" id="components">
+      <div class="container">
+        <p class="eyebrow">Latest updated</p>
+        <h2 class="h2-left">77 component sets, tuned and ready.</h2>
+        <p class="lead left">A sample of the library — rich, functional parts that cover real interface work, not just buttons and inputs.</p>
+
+        <ul class="previews" id="previews">
+          <li class="preview" data-name="DatePicker">
+            <header><h4>DatePicker</h4><span class="badge">Updated</span></header>
+            <div class="preview__body">
+              <div class="cal" aria-hidden="true">
+                <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                <i></i><i></i><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span class="on">9</span><span>10</span><span>11</span><i></i>
+              </div>
+            </div>
+          </li>
+          <li class="preview" data-name="Tour">
+            <header><h4>Tour</h4><span class="badge">New</span></header>
+            <div class="preview__body">
+              <div class="tour">
+                <strong>Add your first transfer</strong>
+                <p>Tap here to send money between your own accounts.</p>
+                <footer><span class="dots"><b class="on"></b><b></b><b></b></span><a href="#components">Next &rarr;</a></footer>
+              </div>
+            </div>
+          </li>
+          <li class="preview" data-name="FloatButton">
+            <header><h4>FloatButton</h4><span class="badge">Updated</span></header>
+            <div class="preview__body preview__body--center"><span class="fab" aria-hidden="true">+</span></div>
+          </li>
+          <li class="preview" data-name="Splitter">
+            <header><h4>Splitter</h4><span class="badge">New</span></header>
+            <div class="preview__body preview__body--center">
+              <div class="splitter" aria-hidden="true"><i></i><b></b><i></i></div>
+            </div>
+          </li>
+          <li class="preview" data-name="Masonry">
+            <header><h4>Masonry</h4><span class="badge">New</span></header>
+            <div class="preview__body preview__body--center">
+              <div class="masonry" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="actions">
+          <a class="btn" href="#components">Browse all components</a>
+          <a class="btn btn--outline" href="#components">Full changelog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Powered by AI -->
+    <section class="section" id="ai">
+      <div class="container ai">
+        <img class="ai__img" src="assets/ai-mcp.png" width="640" height="512" loading="lazy" alt="An AI assistant bubble connected to design system parts: a button, colour tokens, a toggle and a checklist.">
+        <div class="ai__copy">
+          <h2 class="h2-left" data-i18n="ai.h2">Powered by AI</h2>
+          <p>Connect your AI assistant to Core through our MCP server. It reads every component, token and guideline, so you can ask in plain words, Thai or English, and get screens built with real Core parts.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Connect to MCP</a>
+            <a class="btn btn--outline" href="#contact">See how it works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta">
+          <h2 data-i18n="cta.h2">Ready to streamline<br>your workflow?</h2>
+          <a class="btn" href="#search" data-i18n="cta.btn">Get started</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__main">
+        <p class="footer__statement">The shared system behind<br>every Bangkok Bank screen.</p>
+        <div class="footer__cols">
+          <div>
+            <h5>Live Projects</h5>
+            <ul><li><a href="#discover">Colour</a></li><li><a href="#discover">Typography</a></li><li><a href="#discover">Spacing</a></li><li><a href="#discover">Radius</a></li><li><a href="#discover">Motion</a></li></ul>
+          </div>
+          <div>
+            <h5>Centralize Design System</h5>
+            <ul><li><a href="#components">Components</a></li><li><a href="#components">Templates</a></li><li><a href="#components">Pattern &amp; Common Flow</a></li><li><a href="#discover">Live Projects</a></li><li><a href="#components">Changelog</a></li></ul>
+          </div>
+          <div>
+            <h5>Empower with AI</h5>
+            <ul><li><a href="#ai">AI guide</a></li><li><a href="#ai">Prompts</a></li><li><a href="#ai">/llms.txt</a></li><li><a href="#ai">/api/registry</a></li></ul>
+          </div>
+          <div>
+            <h5>Contact Us</h5>
+            <ul><li><a href="#contact">Teams channel</a></li><li><a href="#contact">Request a component</a></li><li><a href="#contact">Report an issue</a></li><li><a href="#contact">Contact XiD</a></li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a class="brand brand--sm" href="#top"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">Design System<br>Website</span></a>
+        <p>&copy; 2026 Bangkok Bank &middot; XiD Design System team</p>
+        <p class="footer__legal"><a href="#contact">Privacy policy</a><a href="#contact">Terms of use</a><a href="#contact">Accessibility</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
